@@ -1,0 +1,43 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(214, 143, 143);
+}
+
+#contenedor{
+    background-color: rgba(66, 81, 90, 0.75);
+    height: 45em;
+    width: 30em;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+#contenedor > div{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+#foto{
+    width: 450px;
+    padding: 10px;
+    border-radius: 15%;
+}
+h2, h4{
+    color: black;
+    padding: 0;
+}
+
+h2{
+    font-weight: bold;
+}

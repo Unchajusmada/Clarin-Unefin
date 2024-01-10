@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(4,180px);
+    grid-template-columns: repeat(auto-fill,228px);
+    background-color: rgba(20, 20, 20, 0.7);
+    padding: 10px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px dotted rgba(0, 0, 0, 0.5);
+    padding: 2.5px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(56, 52, 52);
+}

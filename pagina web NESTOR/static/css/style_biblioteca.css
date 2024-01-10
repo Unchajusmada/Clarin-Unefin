@@ -1,0 +1,12 @@
+#gestor{
+    width: 85%;
+    height: 85%;
+    background-color: rgba(20, 20, 20, 0.7);
+    margin: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+img{
+    width: 45px;
+}

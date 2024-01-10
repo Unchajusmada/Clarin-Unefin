@@ -1,0 +1,42 @@
+{% extends './base.html' %} 
+
+{% block title %} Sobre nosotros {% endblock %}
+
+
+{% block body %} 
+<html lang="en">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nosotros.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros</title>
+</head>
+<body>
+
+    <div class="grid">
+        <div class="texto c1">
+            <h2 id="title"><center>¿Quienes somos?</center></h2>
+        <h5><br>Somos un grupo de estudiantes, con una idea que decidimos plasmar a traves de este medio, con el fin de aportar un granito de 
+            arena mas para aquellos bachilleres quienes estan apenas comenzando su aprendizaje en la institución, así como aquellos quienes se 
+            encuentran un poco mas adelantados, pero que sientan que aun pueden sacar provecho. <br><br>
+
+            La idea, nacio un 28 de diciembre tras un analisis riguroso de la situacion en la institucion, quedando en evidencia un numero grande 
+            de problameticas, problematicas como la desinformacion, un mal manejo de los grupos de emprendimiento para estudiantes, asi como una nula 
+            distribucion de material de apoyo; como libros, archivos, guias, etc. <br><br>
+
+            El proyecto, nace con la idea de ser un medio para el aprovechamiento del estudiante, y asegurar una preparacion mas accesible, para aquellos que 
+            no poseemos los medios para costear material con los contenidos, o como apoyo para el emprendimiento de los bachilleres sin fines de lucro. 
+            </h5>
+        </div><br>
+    </div>
+    <div class="fotos">
+    <div><center><img src="static/img/BRANDON7.jpg" style="width: 208px;"><br><br> <b class="nombres">Brandon Marquez</b></center> </div>
+    <div><center><img src="static/img/IVAN2.jpg" style="width: 208px"><br> <br> <b class="nombres">Ivan Gonzalez</b></center> </div>
+    <div><center><img src="static/img/CARLOS1.jpg" style="width: 208px;"><br> <br> <b class="nombres">Carlos Bruzual</b></center> </div>
+    <div><center><img src="static/img/ARTURO7.jpg" style="width: 208px;"> <br> <br><b class="nombres">Arturo Mendoza</b></center> </div>
+    </div>
+    <br>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,249 @@
+{% extends './base.html' %} 
+
+{% block title %} Ventas {% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_ventas.css') }}">
+<head>
+    <script>
+        function art() {
+    window.open(href="{{ url_for('articulo') }}", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=750,height=800");
+    }
+    </script>
+    <h1>Clarin unefin: Productos en venta</h1>
+</head>
+
+<body>
+    <div class="encabezado">
+    <font size="5"> <p><b><br><center>Productos de interes para el consumo del estudiante</center></b></p></font>
+    </div>
+
+
+     <div class="retoque">
+        <div class="grid-container">
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/mouse.jpeg" style="width: 11em; height: 11em;">
+                    <center>Mouse gaming fps Pro</center>
+                    <input hidden type="number" name="iden" id="id" value="1">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/5.jpg" style="width: 11em; height: 11em;">
+                    <center>Canaima letras rojas</center>
+                    <input hidden type="number" name="iden" id="id" value="2">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/2.jpg" style="width: 11em; height: 11em;">
+                    <center>Bicicleta deportiva</center>
+                    <input hidden type="number" name="iden" id="id" value="3">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/3.jpg" style="width: 11em; height: 11em;">
+                    <center>Blusa de color blanco</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/23.jpg" style="width: 11em; height: 11em;">
+                    <center>Tarjeta grafica</center>
+                    <input hidden type="number" name="iden" id="id" value="11">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div></div>
+                <br><h2 style="text-align: center; color:white">PENDIENTES POR REVISAR. Att. Clarin Unefin</h2><br>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/1.jpg" style="width: 11em; height: 11em;">
+                    <center>Anillos de compromiso</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/6.jpg" style="width: 11em; height: 11em;">
+                    <center>Chemises unefa</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/7.jpg" style="width: 11em; height: 11em;">
+                    <center>Collar artesanal</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/8.jpg" style="width: 11em; height: 11em;">
+                    <center>Chaqueta unefa</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div> 
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/9.jpg" style="width: 11em; height: 11em;">
+                    <center>Plataformas de stream</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/10.jpg" style="width: 11em; height: 11em;">
+                    <center>555555</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/11.jpg" style="width: 11em; height: 11em;">
+                    <center>Gorras de la unefa</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/12.jpg" style="width: 11em; height: 11em;">
+                    <center>Set de maquillaje</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div> 
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/13.jpg" style="width: 11em; height: 11em;">
+                    <center>Cuadernos basicos</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/14.jpg" style="width: 11em; height: 11em;">
+                    <center>Libros de algebra</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/15.jpg" style="width: 11em; height: 11em;">
+                    <center>Luces led</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/16.jpg" style="width: 11em; height: 11em;">
+                    <center>Se realizan mapas</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div> 
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/17.jpg" style="width: 11em; height: 11em;">
+                    <center>Marcadores de colores</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/18.jpg" style="width: 11em; height: 11em;">
+                    <center>Monitor de 32 pulgadas</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/19.jpg" style="width: 11em; height: 11em;">
+                    <center>Mouse gamer</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/20.jpg" style="width: 11em; height: 11em;">
+                    <center>Tortas artesanales</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/21.jpg" style="width: 11em; height: 11em;">
+                    <center>Pendrive de 32gb</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/22.jpg" style="width: 11em; height: 11em;">
+                    <center>No un disco duro</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">    
+                    <img src="static/img/4.jpg" style="width: 11em; height: 11em;">
+                    <center>chupetas Bonbon-Bun</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/24.jpg" style="width: 11em; height: 11em;">
+                    <center>Bandeja de tequeños</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/25.jpg" style="width: 11em; height: 11em;">
+                    <center>Zapatos nick</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+                <div class="grid-item">
+                    <form action="/consultar_producto" method="post">
+                    <img src="static/img/26.jpg" style="width: 11em; height: 11em;">
+                    <center>Pendientes de mariquita</center>
+                    <input hidden type="number" name="iden" id="id" value="4">
+                    <input class="boton" type="submit" value="Ver">
+                    </form>
+                </div>
+    
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+{% endblock %}

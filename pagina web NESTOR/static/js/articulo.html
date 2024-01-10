@@ -1,0 +1,29 @@
+{% extends './base.html' %} 
+
+{% block title %} Usuario {% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/usuario.css') }}">
+<meta charset="utf-8">
+
+<body>
+  <center>
+  <div id="contenedor">
+    <header>
+        <h1 class="titulo">Inicio de Sesion</h1>
+    </header>
+    <form action="C:\xampp\htdocs\programacion 3\validar.php" method="POST">    
+        <div>
+          <h3 class="subtitulo">Usuario</h3>
+          <input type="Usuario" class="datos" name="Usuario">
+        </div>
+        <div>
+          <h3 class="subtitulo">Clave</h3>
+          <input type="password" class="datos" name="Contraseña">
+        </div>
+        <button class="enviar" type="submit">Ingresar</button>
+      </form>
+    </div>
+  </center>  
+</body>
+{% endblock %}

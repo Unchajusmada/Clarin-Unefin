@@ -1,0 +1,50 @@
+{% extends './base.html' %} 
+
+{% block title %} Pagina principal {% endblock %}
+
+{% block body %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="login.js"></script>
+    <link rel="icon" href="news.ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_index.css') }}">
+</head>
+    <title>Diario el UNEFIN</title>
+</head>
+
+<body> 
+
+<marquee id="cintillo" style="background-color: rgb(99, 60, 60); color: whitesmoke;">
+    <h5 class="titulitos" style="background-color: whi;"><strong>Las empanadas suben de precio :( <img
+                src="static/img/sube.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Los
+            asaltos vuelven a las unidades de
+            transporte publico<img style="color: #ff0000; font-size: 10.72px;"
+                src="static/img/sube.png" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El dolar no
+            para de subir
+            nopuedeser</strong><strong><img src="static/img/skull.png" /></strong>
+    </h5>
+</marquee>
+<div id="relleno">
+    <img src="static/img/brand.png" width="450px">
+</div>
+<div id="menu">
+    <div id="nologin">
+        <h3 class="titulares" style="text-align: center; color: #cf9340;">Inicio de sesion NO requerido</h3>
+        <h3 class="titulares"><a href="{{ url_for('noticias') }}">Noticias</a></h3>
+        <h3 class="titulares"><a href="{{ url_for('nosotros') }}">Sobre nosotros</a></h3>
+    </div>
+    <div id="login">
+        <h3 class="titulares" style="text-align: center; color: #cf9340;">Inicio de sesion requerido</h3>
+        <h3 class="titulares"><a href="{{ url_for('biblioteca') }}">Biblioteca</a></h3>
+        <h3 class="titulares"><a href="{{ url_for('ventas') }}">Ventas</a></h3>
+        <h3 class="titulares"><a href="{{ url_for('usuario') }}">Gestion de usuario</a></h3>
+    </div>
+</div>
+
+
+
+</body>
+{% endblock %}

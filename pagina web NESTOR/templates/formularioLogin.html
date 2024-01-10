@@ -1,0 +1,28 @@
+{% extends './base.html' %} 
+
+{% block title %} Inicio de de sesion {% endblock %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/formularioLogin.css') }}">
+  <title>Inicio de sesion</title>
+</head>
+<body>
+  <section class="formulario-Login">
+    <h4>Inicio de sesion</h4>
+    <form action="/consultar" method="post">
+      <input class="controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su correo"><br>
+      <input class="controls" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su Contraseña"><br>
+      <input class="botons" type="submit" value="Entrar">
+      <p><a href="{{ url_for('formularioRegistro') }}">¿Desea registrarse?</a></p>
+      <p><a href="{{ url_for('logout') }}">Salir</a></p>
+    </form>
+  </section>
+</body>
+</html>
+{% endblock %}

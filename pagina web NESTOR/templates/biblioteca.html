@@ -1,0 +1,59 @@
+{% extends './base.html' %} 
+
+{% block title %} Biblioteca {% endblock %}
+
+{% block body %} 
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/biblioteca.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Clarin Unefin: Biblioteca</h1>
+    </header>
+  
+    <div class="grid-container">
+        <div class="grid-item"><br><b>Ingenieria de Sistemas <br>=></b></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/pensum.pdf') }}" target="_blank">Pensum Ingenieria de Sistemas<br><img src="static/img/pdf.png" width="50px"><br></a></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/prelacion.pdf') }}" target="_blank">Matriz de Prelacion Ingenieria de Sistemas<br><img src="static/img/pdf.png" width="50px"><br></a></div>  
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/Inv Ope taha9.pdf') }}" target="_blank">Investigacion de Operaciones Hamdy Taha 9na edicion<br><img src="static/img/pdf.png" width="50px"><br></a></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/SistOperWilliamStallings2da.pdf')}}" target="_blank">Sistemas Operativos William Stallings<br><img src="static/img/pdf.png" width="50px"><br></a></div>
+        <div class="grid-item"><br>Proximamente<br><img src="static/img/pdf.png" width="50px"><br></div>  
+        <div class="grid-item"><br>Proximamente<br><img src="static/img/pdf.png" width="50px"><br></div>
+
+        <div class="grid-item"><br><b>Ingenieria Electrica <br>=></b></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/pensum.pdf') }}" target="_blank">Pensum Ingenieria Electrica<br><img src="static/img/pdf.png" width="50px"><br></a></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/prelacion.pdf') }}" target="_blank">Matriz de Prelacion Ingenieria Electrica<br><img src="static/img/pdf.png" width="50px"><br></a></div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+
+        <div class="grid-item"><br><b>Ingenieria Civil <br>=></b></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/pensum.pdf') }}" target="_blank">Pensum Ingenieria Civil<br><img src="static/img/pdf.png" width="50px"><br></a></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/prelacion.pdf') }}" target="_blank">Matriz de Prelacion Ingenieria Civil<br><img src="static/img/pdf.png" width="50px"><br></a></div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+
+        <div class="grid-item"><br><b>Ingenieria Electronica <br>=></b></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/pensum.pdf') }}" target="_blank">Pensum Ingenieria Electronica<br><img src="static/img/pdf.png" width="50px"><br></a></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/prelacion.pdf') }}" target="_blank">Matriz de Prelacion Ingenieria Electronica<br><img src="static/img/pdf.png" width="50px"><br></a></div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+
+        <div class="grid-item"><br><b>Ingenieria en Telecom. <br>=></b></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/pensum.pdf') }}" target="_blank">Pensum Ingenieria en Telecomunicaciones<br><img src="static/img/pdf.png" width="50px"><br></a></div>
+        <div class="grid-item"><a href="{{ url_for('static', filename='pdf/prelacion.pdf') }}" target="_blank">Matriz de Prelacion Ingenieria en Telecomunicaciones<br><img src="static/img/pdf.png" width="50px"><br></a></div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+      </div>
+</body>
+
+</html>
+{% endblock %}

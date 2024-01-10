@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #282c34;
+    font-family: sans-serif; /*es el tipo de letra que se aplicara*/
+  }
+  
+  .grid-item {
+   
+    text-align: center;
+    justify-content: center;
+  
+    background-color: #03afff;
+    border-radius: 0px; /*definimos lo redondo de las ezquinas*/
+    transition: transform 0.3s ease-in-out; /*proporciona ese efecto de cambio lento*/
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+    
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+
+    grid-auto-flow: dense;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+  
+  h1{
+    color: white;
+  
+  }
+  
+  .encabezado{
+  color: white
+  
+  }
+
+  .boton{
+   align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+ }
+  

@@ -1,0 +1,30 @@
+{% extends './base.html' %} 
+
+{% block title %} Registro de usuario {% endblock %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/formularioRegistro.css') }}">
+  <title>Formulario de Registro</title>
+</head>
+<body>
+  <section class="formulario-R">
+    <h4>Formulario Registro</h4>
+    <form action="{{url_for('guardar_usuario')}}" method="post">
+    <input class="controls" type="text" name="Nombrecompleto" id="Nombrecompleto" placeholder="Ingrese su Nombre y Apellido"><br>
+    <input class="controls" type="number" name="Cedula" id="Cedula" placeholder="Ingrese su Cedula"><br>
+    <input class="controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo"><br>
+    <input class="controls" type="text" name="Usuario" id="Usuario" placeholder="Ingrese un Nombre de usuario"><br>
+    <input class="controls" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su Contraseña"><br>
+    <input class="botons" type="submit" value="Registrar">
+    <p><a href="{{ url_for('formularioLogin') }}">¿Ya estas registrado?</a></p>
+  </form>
+  </section>
+</body>
+</html>
+{% endblock %}

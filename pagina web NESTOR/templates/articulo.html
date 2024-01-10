@@ -1,0 +1,28 @@
+{% extends './base.html' %} 
+
+{% block title %} Articulo {% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/articulo.css') }}">
+<meta charset="utf-8">
+
+<body>
+  <center>
+  <div id="contenedor">
+    <header>
+        <h2 class="titulo">{{session['nombreprod']}}</h2><br>
+        <h2>Precio: {{session['precio']}} Bs.</h2>
+    </header>
+    
+    <p><center><img id="foto" src="static/img/shop.png" style="width: 208px;"></center><br></p>
+    <div><h4>Breve descripcion:</h4> {{session['descripcion']}}<br>
+      <h4>Numero del vendedor:</h4> {{session['numeroVendedor']}}<br>
+      <h4>Correo del vendedor:</h4> {{session['correoVendedor']}}<br></div>
+    
+    
+
+
+    </div>
+  </center>  
+</body>
+{% endblock %}
